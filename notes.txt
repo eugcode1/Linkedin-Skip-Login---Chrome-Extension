@@ -1,0 +1,4 @@
+--chrome extension folder
+C:\Users\xxx\AppData\Local\Google\Chrome\User Data\Default
+
+--overide pages

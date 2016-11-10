@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Linkedin Escape LogIn",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["mystyles.css"],
+      "js": ["jquery.js", "background.js"]
+	  "js": ["jquery.js", "contentscript.js"]
+    }
+  ],
+  
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Disable Linkedin Log In"
+  },
+  "permissions": [
+    "background",
+    "tabs",
+	"http://*/*",
+	"https://*/*"
+  ]
+}
